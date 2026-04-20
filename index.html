@@ -12,10 +12,10 @@ body{font-family:'Inter',sans-serif;background-color:var(--pale-silver);color:va
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
 
 /* ZOOM */
-.zoom-container{position:relative;overflow:hidden;border-radius:12px;background:#222;border:1px dashed var(--yellow-green);cursor:zoom-in;min-height:160px;display:flex;align-items:center;justify-content:center;margin:15px 0}
-.zoom-container img{width:100%;height:auto;display:block;transition:transform 0.4s ease;object-fit:cover}
+.zoom-container{position:relative;overflow:hidden;border-radius:12px;background:#222;border:1px dashed var(--yellow-green);cursor:zoom-in;display:flex;align-items:center;justify-content:center;margin:15px 0}
+.zoom-container img{width:100%;height:auto;aspect-ratio:5 / 3;display:block;transition:transform 0.4s ease;object-fit:cover}
 .zoom-container:hover img{transform:scale(1.5);cursor:zoom-out}
-.zoom-container .placeholder-text{display:flex;align-items:center;justify-content:center;color:var(--yellow-green);font-weight:bold;text-align:center;padding:0px;font-size:0.9rem}
+.zoom-container .placeholder-text{display:flex;align-items:center;justify-content:center;color:var(--yellow-green);font-weight:bold;text-align:center;padding:0px;font-size:0.9rem;position:absolute;inset:0;pointer-events:none}
 
 /* HEADER */
 .main-h1{background:var(--eerie-black);color:var(--yellow-green);padding:80px 20px;text-align:center;font-size:3.5rem;font-weight:900;text-transform:uppercase;line-height:1.1;margin-bottom:50px;border-bottom:8px solid var(--yellow-green)}
@@ -203,7 +203,9 @@ tr:hover{background:#2a2a2a}
   <div class="comp-grid">
     <div class="comp-card">
       <div class="comp-header"><div class="dot dot-lime"></div><span class="comp-name">Estore Link3</span></div>
-      <div class="zoom-container" style="min-height:100px"><div class="placeholder-text"><img src="./EstoreSM.png" alt="Project Overview Visual"></div></div>
+      <div class="zoom-container">
+        <img src="./EstoreSM.png" alt="Project Overview Visual">
+      </div>
       
       <div class="comp-row"><span class="cr-key">Monthly Organic</span><span class="cr-val cr-red">380</span></div>
       <div class="comp-row"><span class="cr-key">Traffic Trend</span><span class="cr-val cr-red">-25.88% ↓</span></div>
@@ -213,8 +215,9 @@ tr:hover{background:#2a2a2a}
     </div>
     <div class="comp-card">
       <div class="comp-header"><div class="dot dot-blue"></div><span class="comp-name">StarTech</span></div>
-      <div class="zoom-container" style="min-height:100px"><div class="placeholder-text"><img src="./StartechSM.png" alt="Project Overview Visual"></div>
-    </div>
+      <div class="zoom-container">
+        <img src="./StartechSM.png" alt="Project Overview Visual">
+      </div>
       <div class="comp-row"><span class="cr-key">Monthly Organic</span><span class="cr-val cr-lime">1.6M</span></div>
       <div class="comp-row"><span class="cr-key">Traffic Trend</span><span class="cr-val cr-lime">+6.89% ↑</span></div>
       <div class="comp-row"><span class="cr-key">Acquisition</span><span class="cr-val" style="font-size:11px">Organic Search (SEO)</span></div>
@@ -224,7 +227,9 @@ tr:hover{background:#2a2a2a}
 
     <div class="comp-card">
       <div class="comp-header"><div class="dot dot-orange"></div><span class="comp-name">RYANS</span></div>
-      <div class="zoom-container" style="min-height:100px"><div class="placeholder-text"><img src="./RyansSM.png" alt="Project Overview Visual"></div></div>
+      <div class="zoom-container">
+        <img src="./RyansSM.png" alt="Project Overview Visual">
+      </div>
       <div class="comp-row"><span class="cr-key">Monthly Organic</span><span class="cr-val">277.4k</span></div>
       <div class="comp-row"><span class="cr-key">Traffic Trend</span><span class="cr-val" style="color:rgba(255,200,80,0.9)">+0.42% →</span></div>
       <div class="comp-row"><span class="cr-key">Acquisition</span><span class="cr-val" style="font-size:11px">Organic Search (SEO)</span></div>
